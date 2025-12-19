@@ -1,0 +1,13 @@
+spring.application.name=EcommerceApp
+
+
+# Oracle datasource configuration
+spring.datasource.username=system
+spring.datasource.password=oracle1234
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521:XE   # replace XE with your SID or service name
+spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+
+# JPA / Hibernate configuration
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.Oracle12cDialect
